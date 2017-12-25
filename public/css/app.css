@@ -1,4 +1,7 @@
 /*
+ * Colors
+ ***********************************************************/
+/*
  * Fonts
  ***********************************************************/
 @font-face {
@@ -15,12 +18,67 @@
   src: url("../fonts/dayrom.eot");
   src: url("../fonts/dayrom.eot") format("embedded-opentype"), url("../fonts/dayrom.svg") format("svg"), url("../fonts/dayrom.ttf") format("true-type-font"), url("../fonts/dayrom.woff") format("woff");
   font-weight: normal; }
+/*
+ * Main styles
+ ***********************************************************/
 body {
-  font-family: "dayrom"; }
+  font-family: "dayrom";
+  /* label color */ }
+  body p {
+    line-height: 2rem; }
+  body .t_btn {
+    border-radius: 2px;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    color: #fff;
+    padding: 8px 15px;
+    -webkit-transition: -webkit-box-shadow .5s;
+    transition: -webkit-box-shadow .5s;
+    transition: box-shadow .5s;
+    transition: box-shadow .5s, -webkit-box-shadow .5s; }
+    body .t_btn:hover {
+      -webkit-box-shadow: 1px 5px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+              box-shadow: 1px 5px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
+  body .input-field label {
+    color: white; }
+
+/*
+ * Nav
+ ***********************************************************/
+nav ul a, nav .brand-logo {
+  color: white; }
+
+.sidenav-trigger {
+  color: white; }
+
+/*
+ * Banner
+ ***********************************************************/
+.parallax-container {
+  padding-top: 3em;
+  min-height: 380px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255, 255, 255, 0.9); }
+  .parallax-container .section {
+    width: 100%; }
+  .parallax-container .intro {
+    color: #212121; }
+
+@media only screen and (max-width: 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%; }
+    .parallax-container .section #index-banner .section {
+      top: 10%; } }
+@media only screen and (max-width: 600px) {
+  #index-banner .section {
+    top: 0; } }
+footer.page-footer {
+  margin-top: 3em; }
+
+/*
+ * Footer
+ ***********************************************************/
 
 /*# sourceMappingURL=app.css.map */
-
-body
-{
-  
-}

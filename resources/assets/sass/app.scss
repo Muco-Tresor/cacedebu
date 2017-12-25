@@ -1,5 +1,10 @@
 
 /*
+ * Colors
+ ***********************************************************/
+ $black: #212121;
+ $white: #fff;
+/*
  * Fonts
  ***********************************************************/
  @font-face
@@ -35,7 +40,107 @@
 $logo : 'ballpark';
 $text_font: 'dayrom'; 
 
+/*
+ * Main styles
+ ***********************************************************/
 body
 {
     font-family: $text_font;
+    
+    p 
+    {
+      line-height: 2rem;
+	}
+	
+	.t_btn
+	{
+		border-radius: 2px;
+		box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+		color: $white;
+		padding: 8px 15px;
+		transition: box-shadow .5s;
+
+		&:hover
+		{
+			box-shadow: 1px 5px 4px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+				
+		}
+	}
+
+	 /* label color */
+	 .input-field label {
+		color: white;
+	  }
 }
+
+
+/*
+ * Nav
+ ***********************************************************/
+nav ul a, nav .brand-logo 
+{
+  	color: white;
+}
+
+.sidenav-trigger 
+{
+  color: white;
+}
+
+
+/*
+ * Banner
+ ***********************************************************/
+.parallax-container 
+{
+	padding-top: 3em;
+	min-height: 380px;
+	line-height: 0;
+	height: auto;
+	color: rgba(255,255,255,.9);
+	  
+	.section 
+  	{
+    	width: 100%;
+	  }
+	  
+	  .intro
+	  {
+		  color: $black;
+	  }
+}
+
+
+@media only screen and (max-width : 992px) 
+{
+	.parallax-container .section 
+  	{
+    	position: absolute;
+    	top: 40%;
+		
+		#index-banner .section 
+		{
+			top: 10%;
+		}
+
+  	}
+  
+}
+
+@media only screen and (max-width : 600px) 
+{
+	#index-banner .section 
+	{
+		top: 0;
+	}
+}
+
+
+footer.page-footer 
+{
+	margin-top: 3em;
+}
+
+/*
+ * Footer
+ ***********************************************************/
