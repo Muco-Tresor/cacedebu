@@ -1,12 +1,41 @@
 
-// Fonts
-//@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+/*
+ * Fonts
+ ***********************************************************/
+ @font-face
+ {
+         font-family: "logo";
+         src: url(../fonts/logo.ttf);
+         font-weight: normal;
+ }
+ 
+ @font-face 
+{
+  font-family: 'ballpark';
+  src: url("../fonts/ballpark.eot");
+  src: url("../fonts/ballpark.eot") format("embedded-opentype"), 
+       url("../fonts/ballpark.svg") format("svg"), 
+       url("../fonts/ballpark.ttf") format("true-type"), 
+       url("../fonts/ballpark.woff") format("woff");
 
-// Variables
-//@import "variables";
+       font-weight: normal;
+}
 
-// Bootstrap
-//@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@font-face 
+{
+  font-family: 'dayrom';
+  src: url("../fonts/dayrom.eot");
+  src: url("../fonts/dayrom.eot") format("embedded-opentype"), 
+       url("../fonts/dayrom.svg") format("svg"), 
+       url("../fonts/dayrom.ttf") format("true-type-font"), 
+       url("../fonts/dayrom.woff") format("woff");
+  font-weight: normal; 
+}
 
-//materialize
-@import "~materialize-css/dist";
+$logo : 'ballpark';
+$text_font: 'dayrom'; 
+
+body
+{
+    font-family: $text_font;
+}

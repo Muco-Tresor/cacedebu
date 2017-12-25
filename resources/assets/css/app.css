@@ -15,12 +15,5 @@
   src: url("../fonts/dayrom.eot");
   src: url("../fonts/dayrom.eot") format("embedded-opentype"), url("../fonts/dayrom.svg") format("svg"), url("../fonts/dayrom.ttf") format("true-type-font"), url("../fonts/dayrom.woff") format("woff");
   font-weight: normal; }
-body {
-  font-family: "dayrom"; }
 
 /*# sourceMappingURL=app.css.map */
-
-body
-{
-  
-}
