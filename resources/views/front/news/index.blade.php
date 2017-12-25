@@ -33,7 +33,7 @@
                     <div class="col l4 m6 s12">
                         <img src="{{ asset($news->image) }}" alt="{{ $news->title }}" title="{{ $news->title }}" class="responsive-img">
                         <br><br>
-                        <a class="t_btn teal waves-effect waves-light" href="#">Read More</a>
+                        <a class="t_btn green waves-effect waves-light" href="{{ route('news.post', $news->id) }}">Read More</a>
                     </div>
                 </div>
             </div>

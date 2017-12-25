@@ -43,7 +43,7 @@
             </div>
 
         </div>
-            <a href="#" class="t_btn teal">Watch More</a>
+            <a href="#" class="t_btn green">Watch More</a>
 
         <h3 class="center">Latest News</h3>
 
@@ -54,7 +54,9 @@
                     <div class="card">
                         <div class="card-image">
                             <img src="{{ asset($news->image) }}" alt="{{ $news->title }}" title="{{ $news->title }}">
-                            <a class="btn-floating halfway-fab waves-effect waves-light teal"><i class="fa fa-angle-right"></i></a>
+                            <a class="btn-floating halfway-fab waves-effect waves-light green" href="{{ route('news.post', $news->id) }}" title="{{ $news->title }}">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         </div>
                         <div class="card-content">
                             <span class="card-title">{{ $news->title }}</span>
@@ -65,7 +67,7 @@
                 </div>   
             @endforeach
         </div> 
-        <a href="#" class="t_btn teal">View more</a>
+        <a href="{{ route('news.index') }}" class="t_btn green">View more</a>
 </section>
 
 

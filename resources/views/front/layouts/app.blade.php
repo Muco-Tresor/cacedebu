@@ -13,6 +13,10 @@
     
     @include('front.layouts.partials.__footer')       
     
-    @include('front.layouts.partials.__js-scripts')       
+    @include('front.layouts.partials.__js-scripts')
+
+    <!---flashy notifications
+    =============================================================-->
+    @include('flashy::message')       
 </body>
 </html>

@@ -23,5 +23,6 @@ Route::get('about', "Front\PagesController@about")->name('pages.about');
 
 /***** News Routes ***** */
 Route::get('news', "Front\NewsController@index")->name('news.index');
-
+Route::get('news/{id}', "Front\NewsController@newsPost")->name('news.post')
+->where('id', '[0-9]+');
 

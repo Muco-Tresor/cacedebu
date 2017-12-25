@@ -40,7 +40,12 @@ body {
       -webkit-box-shadow: 1px 5px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
               box-shadow: 1px 5px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2); }
   body .input-field label {
-    color: white; }
+    color: black; }
+  body .date {
+    font-family: 'ubuntu'; }
+  body .news_post-text {
+    font-size: 17px;
+    font-weight: 300; }
 
 /*
  * Nav
