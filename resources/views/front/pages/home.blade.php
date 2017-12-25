@@ -60,6 +60,7 @@
                         </div>
                         <div class="card-content">
                             <span class="card-title">{{ $news->title }}</span>
+                            <h6 class="date">Updated at: {{ date("d - M - Y  H:ia", strtotime($news->updated_at)) }}</h6>
                             <p>{{ $news->body_description }}...</p>
                             <div class="divider"></div>
                         </div>

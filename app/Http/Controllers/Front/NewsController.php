@@ -32,8 +32,7 @@ class NewsController extends Controller
     {
         $news = News::where('id', $id)->first();
 
-        if($news)
-        {
+        if ($news) {
             return view('front.news.post', compact('news'));
         }
 
